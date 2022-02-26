@@ -3,7 +3,11 @@ package day15;
 enum Mobile {
 	
 	SAMSUNG, GTC, XIAOMI, BLACKBERRY;
-	int price=15;
+	int price;
+	Mobile() {
+		price = 80;
+		System.out.println("Constructor");
+	}
 	public int getprice() {
 		return price;
 	}
